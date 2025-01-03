@@ -1,0 +1,8 @@
+{
+
+    "name" : "Python 3.10.10",
+    "image" : "mcr.microsoft.com/vscode/devcontainers/python3.10",
+    "settings" : {},
+    "postCreateCommand": "python --version"
+    
+}
