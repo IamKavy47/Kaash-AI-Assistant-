@@ -382,5 +382,21 @@
     {
         "role": "assistant",
         "content": "That's great to hear, Kavy!"
+    },
+    {
+        "role": "user",
+        "content": "hey"
+    },
+    {
+        "role": "assistant",
+        "content": "Hi Kavy!"
+    },
+    {
+        "role": "user",
+        "content": "whats my age"
+    },
+    {
+        "role": "assistant",
+        "content": "You are 17 years old."
     }
 ]
