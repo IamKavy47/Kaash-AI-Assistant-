@@ -50,12 +50,12 @@ HtmlCode = '''<!DOCTYPE html>
 
 HtmlCode = str(HtmlCode).replace("recognition.lang = '';", f"recognition.lang = '{InputLanguage}';")
 
-with open(r"Data\Voice.html", "w") as f:
+with open(r"Data/Voice.html", "w") as f:
     f.write (HtmlCode)
 
 current_dir = os.getcwd()
 
-Link = f"{current_dir}/Data\Voice.html"
+Link = f"{current_dir}/Data/Voice.html"
 
 chrome_options = Options()
 user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.142.86 Safari/537.36"

@@ -18,7 +18,7 @@ async def TextToAudioFile(text) -> None:
 
     
     communicate = edge_tts.Communicate(text, AssistantVoice, pitch='+5Hz', rate='+13%')
-    await communicate.save(r"Data\speech.mp3")  
+    await communicate.save(r"Data/speech.mp3")  
 
 
 def TTS(Text, func=lambda r=None: True):
@@ -31,7 +31,7 @@ def TTS(Text, func=lambda r=None: True):
             pygame.mixer.init()
 
             
-            pygame.mixer.music.load(r"Data\speech.mp3")
+            pygame.mixer.music.load(r"Data/speech.mp3")
             pygame.mixer.music.play()  
 
             

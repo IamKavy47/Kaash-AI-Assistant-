@@ -17,10 +17,10 @@ System = f"""Hello, I am {Username}, You are a very accurate and advanced AI cha
 *** Just answer the question from the provided data in a professional way. ***"""
 
 try:
-    with open(r"Data\ChatLog.json", "r") as f:
+    with open(r"Data/ChatLog.json", "r") as f:
         messagee = load(f)
 except:
-    with open(r"Data\ChatLog.json", "w") as f:
+    with open(r"Data/ChatLog.json", "w") as f:
         dump([], f)
 
 def GoogleSearch(query):
@@ -66,7 +66,7 @@ def Information():
 def RealtimeSearchEngine(prompt):
     global SystemChatBot, messages
 
-    with open(r"Data\ChatLog.json", "r") as f:
+    with open(r"Data/ChatLog.json", "r") as f:
         messages = load(f)
     messages.append({"role": "user", "content": f"{prompt}"})
 
@@ -91,7 +91,7 @@ def RealtimeSearchEngine(prompt):
     Answer = Answer.strip().replace("</s>","")
     messages.append({"role": "assistant", "content": Answer})
 
-    with open(r"Data\ChatLog.json", "w") as f:
+    with open(r"Data/ChatLog.json", "w") as f:
         dump(messages, f, indent=4)
 
     SystemChatBot.pop()

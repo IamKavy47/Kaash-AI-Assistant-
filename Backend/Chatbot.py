@@ -33,10 +33,10 @@ SystemChatBot = [
 ]
 
 try:
-    with open(r"Data\ChatLog.json", "r") as f:
+    with open(r"Data/ChatLog.json", "r") as f:
         messages = load(f)
 except:
-    with open(r"Data\ChatLog.json", "w") as f:
+    with open(r"Data/ChatLog.json", "w") as f:
         dump([],f)
 
 def RealtimeInformation():
@@ -62,7 +62,7 @@ def AnswerModifier(Answer):
 
 def ChatBot(Query):
     try:
-        with open(r"Data\ChatLog.json","r") as f:
+        with open(r"Data/ChatLog.json","r") as f:
             messages = load(f)
         
         messages.append({"role": "user", "content": f"{Query}"})
@@ -87,14 +87,14 @@ def ChatBot(Query):
 
         messages.append({"role": "assistant", "content": Answer})
 
-        with open(r"Data\ChatLog.json", "w") as f:
+        with open(r"Data/ChatLog.json", "w") as f:
             dump(messages, f, indent=4)
 
         return AnswerModifier(Answer=Answer)
     
     except Exception as e:
         print(f"Error: {e}")
-        with open(r"Data\ChatLog.json", "w") as f:
+        with open(r"Data/ChatLog.json", "w") as f:
             dump([],f,indent=4)
         return ChatBot(Query)
 

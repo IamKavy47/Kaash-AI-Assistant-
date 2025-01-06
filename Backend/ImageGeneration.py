@@ -2,7 +2,7 @@ import asyncio
 from random import randint
 from PIL import Image
 import requests
-from dotenv import dotenv_values
+from dotenv import get_key
 import os
 from time import sleep
 
@@ -44,7 +44,7 @@ async def generate_images(prompt: str):
     image_bytes_list = await asyncio.gather(*tasks)
 
     for i , image_bytes in enumerate(image_bytes_list):
-        with open(fr"Data\{prompt.replace(' ','_')}{i + 1}.jpg", "wb") as f:
+        with open(fr"Data/{prompt.replace(' ','_')}{i + 1}.jpg", "wb") as f:
             f.write(image_bytes)
 
 def GenerateImages(prompt: str):
@@ -54,7 +54,7 @@ def GenerateImages(prompt: str):
 while True:
 
     try:
-        with open(r"Frontend\Files\ImageGeneration.data", "r") as f:
+        with open(r"Frontend/Files/ImageGeneration.data", "r") as f:
             Data: str = f.read()
 
         Prompt , Status = Data.split(",")
@@ -63,7 +63,7 @@ while True:
             print("Generating Images... ")
             ImageStatus = GenerateImages(prompt=Prompt)
 
-            with open(r"Frontend\Files\ImageGeneration.data", "w") as f:
+            with open(r"Frontend/Files/ImageGeneration.data", "w") as f:
                 f.write("False, False")
                 break
             

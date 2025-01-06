@@ -90,11 +90,11 @@ def Content(Topic):
     Topic: str=Topic.replace("Content", "")
     ContentByAI = ContentWriterAI(Topic)
 
-    with open(rf"Data\{Topic.lower().replace(' ','')}.txt", "w", encoding="utf-8") as file:
+    with open(rf"Data/{Topic.lower().replace(' ','')}.txt", "w", encoding="utf-8") as file:
         file.write(ContentByAI)
         file.close()
 
-    OpenNotepad(rf"Data\{Topic.lower().replace(' ','')}.txt")
+    OpenNotepad(rf"Data/{Topic.lower().replace(' ','')}.txt")
     return True
 
 def YoutubeSearch(Topic):
