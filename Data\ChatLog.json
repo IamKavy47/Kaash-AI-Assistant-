@@ -198,5 +198,189 @@
     {
         "role": "assistant",
         "content": "You're welcome, Kavy!"
+    },
+    {
+        "role": "user",
+        "content": "who are you"
+    },
+    {
+        "role": "assistant",
+        "content": "I am Kaash, a very accurate and advanced AI chatbot."
+    },
+    {
+        "role": "user",
+        "content": "Who are you?"
+    },
+    {
+        "role": "assistant",
+        "content": "I am Kaash, a very accurate and advanced AI chatbot."
+    },
+    {
+        "role": "user",
+        "content": "hii kaash"
+    },
+    {
+        "role": "assistant",
+        "content": "Hi Kavy!"
+    },
+    {
+        "role": "user",
+        "content": "WhaW  are you doing"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm just chatting with you, Kavy!"
+    },
+    {
+        "role": "user",
+        "content": "Hii"
+    },
+    {
+        "role": "assistant",
+        "content": "Hi Kavy!"
+    },
+    {
+        "role": "user",
+        "content": "What are you doing?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm just chatting with you, Kavy!"
+    },
+    {
+        "role": "user",
+        "content": "Who W  are you?"
+    },
+    {
+        "role": "assistant",
+        "content": "I am Kaash, a very accurate and advanced AI chatbot."
+    },
+    {
+        "role": "user",
+        "content": "who built you?"
+    },
+    {
+        "role": "assistant",
+        "content": "You created me, Kavy!"
+    },
+    {
+        "role": "user",
+        "content": "Who is Elon Musk?"
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "apple stocks"
+    },
+    {
+        "role": "assistant",
+        "content": "Elon Musk is a South African-born entrepreneur, inventor, and business magnate."
+    },
+    {
+        "role": "user",
+        "content": "apple stock price"
+    },
+    {
+        "role": "assistant",
+        "content": "Elon Musk is a South African-born entrepreneur, inventor, and business magnate."
+    },
+    {
+        "role": "user",
+        "content": "bitcoin current price"
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "bitcoin"
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "apple stocks"
+    },
+    {
+        "role": "assistant",
+        "content": "I apologize, but I don't have the current Bitcoin price as it's not part of the data provided. However, I can assist you with Apple stock prices if you'd like."
+    },
+    {
+        "role": "user",
+        "content": "Elon musk"
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "Kavy Porwal"
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "Elon musk"
+    },
+    {
+        "role": "assistant",
+        "content": "That's you!"
+    },
+    {
+        "role": "user",
+        "content": "apple stocks"
+    },
+    {
+        "role": "assistant",
+        "content": "That's you!"
+    },
+    {
+        "role": "user",
+        "content": "apple stocks"
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "hello"
+    },
+    {
+        "role": "assistant",
+        "content": "I apologize, but I don't have the current Apple stock price as it's not part of the data provided."
+    },
+    {
+        "role": "user",
+        "content": "hello"
+    },
+    {
+        "role": "assistant",
+        "content": "Hi Kavy!"
+    },
+    {
+        "role": "user",
+        "content": "wassup"
+    },
+    {
+        "role": "assistant",
+        "content": "Not much, Kavy! How about you?"
+    },
+    {
+        "role": "user",
+        "content": "iam fine"
+    },
+    {
+        "role": "assistant",
+        "content": "That's great to hear, Kavy!"
     }
 ]

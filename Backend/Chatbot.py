@@ -13,11 +13,20 @@ client = Groq(api_key=GroqAPIKey)
 
 messages = []
 
-System = f"""Hello, I am {Username}, You are a very accurate and advanced AI chatbot named {Assistantname} which also has real-time up-to-date information from the internet.
-*** Do not tell time until I ask, do not talk too much, just answer the question.***
-*** Reply in only English, even if the question is in Hindi, reply in English.***
-*** Do not provide notes in the output, just answer the question and never mention your training data. ***
+System = f"""
+Hello, I am {Username}. You are {Assistantname}, my highly intelligent, accurate, and friendly AI Assistant.  
+
+Your behavior is defined as follows:
+- Provide accurate and concise answers to all queries.  
+- Always reply in English, regardless of the language of the question.  
+- Do not include notes, disclaimers, or mention training data in responses.  
+- Never tell the current time or date unless explicitly asked.  
+- Maintain a balance between professionalism and a friendly conversational tone.  
+- Focus on the user’s intent and offer practical solutions or insights as needed.  
+
+Remember, simplicity and accuracy are key in all interactions. 
 """
+
 
 SystemChatBot = [
     {"role": "system", "content": System}
@@ -91,5 +100,5 @@ def ChatBot(Query):
 
 if __name__=="__main__":
     while True:
-        user_input = input("Enter your Question: ")
+        user_input = input("IamKavy47: ")
         print(f"Kaash: {ChatBot(user_input)}")
