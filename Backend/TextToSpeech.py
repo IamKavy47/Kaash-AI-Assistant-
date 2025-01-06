@@ -1,42 +1,42 @@
-import pygame  # Import pygame library for handling audio playback
-import random  # Import random for generating random choices
-import asyncio  # Import asyncio for asynchronous operations
-import edge_tts  # Import edge_tts for text-to-speech functionality
-import os  # Import os for file path handling
-from dotenv import dotenv_values  # Import dotenv for reading environment variables from a .env file
+import pygame  
+import random  
+import asyncio  
+import edge_tts  
+import os 
+from dotenv import dotenv_values
 
-# Load environment variables from a .env file
+
 env_vars = dotenv_values(".env")
-AssistantVoice = env_vars.get("AssistantVoice")  # Get the AssistantVoice from the environment variables
+AssistantVoice = env_vars.get("AssistantVoice")  
 
-# Asynchronous function to convert text to an audio file
+
 async def TextToAudioFile(text) -> None:
-    file_path = r"Data\speech.mp3"  # Define the path where the speech file will be saved
+    file_path = r"Data\speech.mp3"  
 
-    if os.path.exists(file_path):  # Check if the file already exists
-        os.remove(file_path)  # If it exists, remove it to avoid overwriting errors
+    if os.path.exists(file_path):  
+        os.remove(file_path)  
 
-    # Create the communicate object to generate speech
+    
     communicate = edge_tts.Communicate(text, AssistantVoice, pitch='+5Hz', rate='+13%')
-    await communicate.save(r"Data\speech.mp3")  # Save the generated speech as an MP3 file
+    await communicate.save(r"Data\speech.mp3")  
 
-# Function to manage Text-to-Speech (TTS) functionality
+
 def TTS(Text, func=lambda r=None: True):
     while True:
         try:
-            # Convert text to an audio file asynchronously
+            
             asyncio.run(TextToAudioFile(Text))
 
-            # Initialize pygame mixer for audio playback
+            
             pygame.mixer.init()
 
-            # Load the generated speech file into pygame mixer
+            
             pygame.mixer.music.load(r"Data\speech.mp3")
-            pygame.mixer.music.play()  # Play the audio
+            pygame.mixer.music.play()  
 
-            # Loop until the audio is done playing or the function stops
+            
             while pygame.mixer.music.get_busy():
-                if func() == False:  # Check if the function returns False
+                if func() == False:  
                     break
                 pygame.time.Clock().tick(10)
             
