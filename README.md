@@ -26,26 +26,23 @@ Kaash is a Python-based desktop AI assistant that offers a seamless blend of aut
 
 ## File Structure
 
-```
-Project Directory
-â”œâ”€â”€ Backend
-â”‚   â”œâ”€â”€ Automation.py
-â”‚   â”œâ”€â”€ Chatbot.py
-â”‚   â”œâ”€â”€ ImageGeneration.py
-â”‚   â”œâ”€â”€ Model.py
-â”‚   â”œâ”€â”€ Realtimesearchengine.py
-â”‚   â”œâ”€â”€ stt.py
-â”‚   â”œâ”€â”€ tts.py
-â”œâ”€â”€ Frontend
-â”‚   â”œâ”€â”€ gui.py
-â”‚   â”œâ”€â”€ graphics
-â”‚   â”‚   â””â”€â”€ [GUI elements]
-â”‚   â”œâ”€â”€ Files
-â”‚       â””â”€â”€ [Data files]
-â”œâ”€â”€ .env
-â”œâ”€â”€ Main.py
-â”œâ”€â”€ requirements.txt
-```
+'''
+├── .env               # Configurations (username, assistant name, API keys, etc.)
+├── Main.py            # Entry point for the application
+├── requirements.txt   # Dependencies
+├── Backend/
+│   ├── Automation.py  # Handles automation features
+│   ├── Chatbot.py     # AI conversation engine
+│   ├── ImageGeneration.py  # AI-based image generation
+│   ├── Model.py       # Backend model logic
+│   ├── Realtimesearchengine.py  # Real-time search logic
+│   ├── stt.py         # Speech-to-text processing
+│   └── tts.py         # Text-to-speech processing
+├── Frontend/
+│   ├── gui.py         # GUI implementation
+│   ├── Files/         # Contains required data files
+│   └── graphics/      # Stores GUI components
+'''
 
 ## Environment Variables
 
