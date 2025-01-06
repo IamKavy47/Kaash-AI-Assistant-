@@ -26,7 +26,7 @@ Kaash is a Python-based desktop AI assistant that offers a seamless blend of aut
 
 ## File Structure
 
-'''
+```
 ├── .env               # Configurations (username, assistant name, API keys, etc.)
 ├── Main.py            # Entry point for the application
 ├── requirements.txt   # Dependencies
@@ -42,7 +42,7 @@ Kaash is a Python-based desktop AI assistant that offers a seamless blend of aut
 │   ├── gui.py         # GUI implementation
 │   ├── Files/         # Contains required data files
 │   └── graphics/      # Stores GUI components
-'''
+```
 
 ## Environment Variables
 
