@@ -1,4 +1,4 @@
-from Frontend.Gui import (
+from Frontend.GUI import (
     GraphicalUserInterface,
     SetAssistantStatus,
     ShowTextToScreen,
@@ -33,7 +33,7 @@ subprocesses = []
 Functions = ["open", "close", "play", "system", "content", "google search", "youtube search"]
 
 def ShowDefaultChatIfNoChats():
-    File = open(r"Data/ChatLog.json", "r", encoding="utf-8")
+    File = open(r"Data\ChatLog.json", "r", encoding="utf-8")
     if len(File.read()) < 5:
         with open(TempDictonaryPath("Database.data"), "w", encoding="utf-8") as file:
             file.write("")
@@ -42,7 +42,7 @@ def ShowDefaultChatIfNoChats():
             file.write(DefaultMessage)
 
 def ReadChatLogJson():
-    with open(r"Data/ChatLog.json", "r", encoding="utf-8") as file:
+    with open(r"Data\ChatLog.json", "r", encoding="utf-8") as file:
         chatlog_data = json.load(file)
     return chatlog_data
 
@@ -117,7 +117,7 @@ def MainExecution():
                 TaskExecution = True
 
     if ImageExecution == True:
-        with open(r"Frontend/Files/ImageGeneration.data", "w") as file:
+        with open(r"Frontend\Files\ImageGeneration.data", "w") as file:
             file.write(f"{ImageGenerationQuery},True")
 
         try:
